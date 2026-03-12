@@ -46,7 +46,7 @@ h2 {
     transition: .3s;
 } */
 
-.nav-item a:hover {
+ul a:hover {
     color: cyan;
 } 
 
