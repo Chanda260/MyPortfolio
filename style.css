@@ -18,7 +18,7 @@ h2 {
 }
 
 /* NAVBAR */
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,13 +28,13 @@ h2 {
     top: 0;
     backdrop-filter: blur(10px);
     z-index: 100;
-}
+} */
 
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
 }
-
+/* 
 nav ul {
     display: flex;
     gap: 25px;
@@ -52,7 +52,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: cyan;
-}
+} */
 
 /* HERO */
 .hero {
