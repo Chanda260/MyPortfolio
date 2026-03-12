@@ -18,7 +18,7 @@ h2 {
 }
 
 /* NAVBAR */
-/* .navbar {
+ .container-fluid {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@ h2 {
     top: 0;
     backdrop-filter: blur(10px);
     z-index: 100;
-} */
+} 
 
 .logo {
     font-size: 1.5rem;
