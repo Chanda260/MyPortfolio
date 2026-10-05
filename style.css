@@ -38,45 +38,89 @@ h2 {
 
 /* HERO */
 .hero {
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1300&q=80')
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.82)),
+        url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1300&q=80')
         center/cover no-repeat;
     position: relative;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
+    padding: 80px 20px;
 }
 
 .hero-content {
     position: relative;
     text-align: center;
-    max-width: 600px;
+    max-width: 850px;
+    z-index: 1;
 }
 
-.hero h1 {
-    font-size: 3rem;
+.hero-greeting {
+    color: cyan;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 4px;
     margin-bottom: 15px;
 }
 
-.hero span {
+.hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero h1 span {
     color: cyan;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #e5e5e5;
+}
+
+.hero-description {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #cfcfcf;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.hero-tech {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.hero-tech span {
+    padding: 7px 14px;
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    border-radius: 20px;
+    color: cyan;
+    font-size: 0.85rem;
+    background: rgba(0, 255, 255, 0.05);
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .btn {
     padding: 12px 25px;
     background: cyan;
     color: black;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    display: inline-block;
+    border: 2px solid cyan;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
@@ -84,6 +128,35 @@ h2 {
 
 .btn:hover {
     background: white;
+    border-color: white;
+    color: black;
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: black;
+}
+
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: cyan;
 }
 
 /* ABOUT */
@@ -212,4 +285,28 @@ color:cyan;
 
 .hero-buttons{
 margin-top:20px;
+}
+/* MOBILE HERO */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-tech {
+        gap: 7px;
+    }
+
+    .hero-tech span {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
 }
