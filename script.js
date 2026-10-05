@@ -1,8 +1,26 @@
-// Smooth scroll
-document.querySelectorAll("nav a").forEach(link => {
-    link.addEventListener("click", e => {
-        e.preventDefault();
-        const section = document.querySelector(e.target.getAttribute("href"));
-        section.scrollIntoView({ behavior: "smooth" });
+// =====================================================
+// SMOOTH SCROLL
+// =====================================================
+
+document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+
+    link.addEventListener('click', event => {
+
+        event.preventDefault();
+
+        const target =
+            document.querySelector(
+                link.getAttribute('href')
+            );
+
+        if (target) {
+
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+
+        }
+
     });
+
 });

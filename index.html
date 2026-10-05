@@ -3,108 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+
+    <title>Chanda Chanda | Backend Developer</title>
 
     <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-primary navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#hero">MyPortfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#hero">
+                Chanda<span>.</span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="#contact">Contact </a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="https://github.com/Chanda260" target="_blank">GitHub</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </nav>
 
-    <!-- HERO SECTION -->
-<!-- HERO SECTION -->
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+
+                        <a
+                            class="nav-github"
+                            href="https://github.com/Chanda260"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            GitHub ↗
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
     <section id="hero" class="hero">
-        <div class="hero-content">
 
-            <p class="hero-greeting">HELLO, I'M</p>
+        <!-- Background grid -->
+        <div class="hero-grid"></div>
 
-            <h1>
-                Chanda <span>Chanda</span>
-            </h1>
+        <!-- Background glow -->
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
 
-            <h2>Backend Developer & Computer Engineering Student</h2>
 
-            <p class="hero-description">
-                I build practical web systems, REST APIs, and backend solutions
-                using Laravel, PHP, and MySQL, with a focus on solving real-world problems through technology.
-            </p>
+        <div class="container hero-container">
 
-            <div class="hero-tech">
-                <span>Laravel</span>
-                <span>PHP</span>
-                <span>REST APIs</span>
-                <span>MySQL</span>
-                <span>React</span>
-            </div>
+            <!-- HERO TEXT -->
 
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
-            </div>
+            <div class="hero-content">
 
-            <div class="social-links">
-                <a href="https://github.com/Chanda260" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/chanda-chanda-0a8543343/" target="_blank">LinkedIn</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>
-                    I am a Final year Computer Engineering student and aspiring software developer with a strong passion for building real-world systems.
-
-                    My experience includes developing web applications, backend systems, and software tools using technologies such as HTML, CSS, JavaScript, PHP, Java, and Laravel.
-
-                    I enjoy solving problems through technology and continuously improving my development skills by building practical projects such as blogging platforms, backend APIs, and secure systems.
-
-                    I am currently expanding my skills by working on larger full-stack projects and modern web applications.
+                <p class="hero-eyebrow">
+                    COMPUTER ENGINEERING · BACKEND DEVELOPMENT
                 </p>
+
+
+                <h1>
+                    Hi, I'm <span>Chanda Chanda.</span>
+                </h1>
+
+
+                <h2>
+                    I build systems that solve
+                    <span class="hero-highlight">
+                        real problems.
+                    </span>
+                </h2>
+
+
+                <p class="hero-description">
+
+                    I'm a Computer Engineering student and backend-focused
+                    developer building practical web applications, REST APIs,
+                    and software systems with Laravel, PHP, MySQL and modern
+                    web technologies.
+
+                </p>
+
+
+                <!-- HERO BUTTONS -->
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#projects"
+                        class="btn hero-btn">
+
+                        View My Work ↓
+
+                    </a>
+
+
+                    <a
+                        href="#contact"
+                        class="btn hero-btn-outline">
+
+                        Let's Talk ↗
+
+                    </a>
+
+                </div>
+
+
+                <!-- SOCIAL LINKS -->
+
+                <div class="hero-socials">
+
+                    <a
+                        href="https://github.com/Chanda260"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        GitHub
+
+                    </a>
+
+                    <span>•</span>
+
+                    <a
+                        href="https://www.linkedin.com/in/chanda-chanda-0a8543343/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        LinkedIn
+
+                    </a>
+
+                </div>
+
             </div>
+
+
+            <!-- HERO TECH CARD -->
+
+            <div class="hero-stack-card">
+
+                <div class="stack-card-top">
+
+                    <span class="status-dot"></span>
+
+                    <span>Current focus</span>
+
+                </div>
+
+
+                <div class="stack-code">
+                    backend:
+                    <strong>Laravel</strong>
+                </div>
+
+
+                <div class="stack-code">
+                    language:
+                    <strong>PHP</strong>
+                </div>
+
+
+                <div class="stack-code">
+                    api:
+                    <strong>REST</strong>
+                </div>
+
+
+                <div class="stack-code">
+                    database:
+                    <strong>MySQL</strong>
+                </div>
+
+
+                <div class="stack-code">
+                    frontend:
+                    <strong>React</strong>
+                </div>
+
+
+                <div class="stack-code">
+                    systems:
+                    <strong>ESP32 / IoT</strong>
+                </div>
+
+            </div>
+
         </div>
+
     </section>
 
-    <!-- SKILLS SECTION -->
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <p>
+
+                    I am a Final year Computer Engineering student and
+                    aspiring software developer with a strong passion for
+                    building real-world systems.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
     <section id="skills" class="skills">
+
         <h2>Skills</h2>
+
         <div class="skills-grid">
+
             <div class="skill-card">HTML</div>
             <div class="skill-card">CSS</div>
             <div class="skill-card">JavaScript</div>
@@ -115,117 +288,190 @@
             <div class="skill-card">React</div>
             <div class="skill-card">Git</div>
             <div class="skill-card">GitHub</div>
+
         </div>
+
     </section>
 
-    <!-- PROJECTS SECTION -->
-<section id="projects" class="projects">
-    <h2>Projects</h2>
 
-    <div class="project-grid">
+    <!-- ================= PROJECTS ================= -->
 
-        <!-- BLOG APP -->
-        <div class="project-card">
-            
+    <section id="projects" class="projects">
 
-            <h3>Blog Website</h3>
+        <h2>Projects</h2>
 
-            <p>
-            A dynamic blogging platform allowing users to publish and manage articles with a clean and responsive interface.
-            </p>
+        <div class="project-grid">
+
+
+            <!-- BLOG -->
+
+            <div class="project-card">
+
+                <h3>
+                    Blog Website
+                </h3>
+
+                <p>
+
+                    A dynamic blogging platform allowing users to publish
+                    and manage articles with a clean and responsive interface.
+
+                </p>
+
+            </div>
+
+
+            <!-- JAVA CALCULATOR -->
+
+            <div class="project-card">
+
+                <h3>
+                    Java Calculator
+                </h3>
+
+                <p>
+
+                    A desktop calculator built using Java that performs
+                    basic arithmetic operations with a clean interface.
+
+                </p>
+
+            </div>
+
+
+            <!-- CHINESE WALL -->
+
+            <div class="project-card">
+
+                <h3>
+                    Chinese Wall Security System
+                </h3>
+
+                <p>
+
+                    A system designed to enforce access control rules based
+                    on the Chinese Wall security model to prevent conflicts
+                    of interest.
+
+                </p>
+
+            </div>
+
+
+            <!-- CAEMS -->
+
+            <div class="project-card">
+
+                <h3>
+                    CAEMS
+                </h3>
+
+                <p>
+
+                    A Context-Aware Energy Management System designed to
+                    monitor environmental conditions and intelligently control
+                    electrical devices based on the current context.
+
+                </p>
+
+            </div>
+
+
+            <!-- PORTFOLIO -->
+
+            <div class="project-card">
+
+                <h3>
+                    Personal Portfolio Website
+                </h3>
+
+                <p>
+
+                    A responsive personal portfolio built to showcase
+                    projects, technical skills and professional information.
+
+                </p>
+
+            </div>
+
+
         </div>
 
-        <!-- E-COMMERCE SITE -->
-        <div class="project-card">
-            
-
-            <h3>
-                Ecommerce System
-                (In Progress)
-            </h3>
-
-            <p>
-            A full e-commerce platform currently under development with product management, shopping cart, and checkout system.
-            </p>
-        </div>
-
-        <!-- JAVA CALCULATOR -->
-        <div class="project-card">
-            
-
-            <h3>Java Calculator</h3>
-
-            <p>
-            A desktop calculator built using Java that performs basic arithmetic operations with a clean interface.
-        </p>
-        </div>
-
-        <!-- CHINESE WALL SYSTEM -->
-         <div class="project-card">
-            
-
-            <h3>Chinese Wall Security System</h3>
-
-            <p>
-            A system designed to enforce access control rules based on the Chinese Wall security model to prevent conflicts of interest.
-            </p>
-        </div>
-
-        <!-- MOVIES WEBSITE -->
-        <div class="project-card">
-            
-
-            <h3>
-                ZedFlix Movie Backend
-                (In Progress)
-            </h3>
-
-            <p>
-            A backend system designed to manage movie data, users and content for a streaming-style platform.
-            </p><br>
-        </div>
-
-        <!-- PORTFOLIO WEBSITE -->
-        <div class="project-card">
-        
-
-        <h3>Personal Portfolio Website</h3>
-
-        <p>
-        A responsive personal portfolio built to showcase projects, technical skills and professional information.
-        </p><br>
-
-    </div>
-</section>
+    </section>
 
 
-    <!-- CONTACT -->
+    <!-- ================= CONTACT ================= -->
+
     <section id="contact" class="contact">
 
-    <h2>Contact Me</h2>
-
-    <p>You can reach me through any of the platforms below.</p>
-
-    <div class="contact-info">
-
-        <p><strong>Email:</strong> chandachanda1738@gmail.com</p>
-
-        <p><strong>Phone:</strong> +260 978 358 916</p>
+        <h2>Contact Me</h2>
 
         <p>
-        <a href="https://github.com/Chanda260" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/chanda-chanda-0a8543343/" target="_blank">LinkedIn</a>
+            You can reach me through any of the platforms below.
         </p>
 
-    </div>
+
+        <div class="contact-info">
+
+            <p>
+                <strong>Email:</strong>
+                chandachanda1738@gmail.com
+            </p>
+
+
+            <p>
+                <strong>Phone:</strong>
+                +260 978 358 916
+            </p>
+
+
+            <p>
+
+                <a
+                    href="https://github.com/Chanda260"
+                    target="_blank">
+
+                    GitHub
+
+                </a>
+
+                |
+
+                <a
+                    href="https://www.linkedin.com/in/chanda-chanda-0a8543343/"
+                    target="_blank">
+
+                    LinkedIn
+
+                </a>
+
+            </p>
+
+        </div>
 
     </section>
 
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p>© 2026 Chanda Chanda | All Rights Reserved</p>
+
+        <p>
+            © 2026 Chanda Chanda | All Rights Reserved
+        </p>
+
     </footer>
 
+
+    <!-- CUSTOM JS -->
     <script src="script.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwxHj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
 </body>
 </html>
